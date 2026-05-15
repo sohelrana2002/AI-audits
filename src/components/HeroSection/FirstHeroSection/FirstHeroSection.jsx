@@ -1,17 +1,15 @@
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import Typed from "typed.js";
 import Lottie from "lottie-react";
 import AIAUDITS from "../../../assets/Lottie-Files/AiAudits.json";
-import FirstHeroImage from "../../../../public/FirstHero.png";
-import { MdOutlineStart } from "react-icons/md";
 
 import "./FirstHeroSection.css";
 
 const FirstHeroSection = (props) => {
-  const { description,  homeBg , title } = props;
+  const { description, homeBg, title } = props;
   const typedRef = useRef(null);
 
-  if(homeBg === true){
+  if (homeBg === true) {
     useEffect(() => {
       const typed = new Typed(typedRef.current, {
         strings: [" content decetor", "plagiarism decetion"],
@@ -24,7 +22,7 @@ const FirstHeroSection = (props) => {
         showCursor: true,
         cursorChar: "|",
       });
-  
+
       return () => {
         typed.destroy();
       };
@@ -36,9 +34,13 @@ const FirstHeroSection = (props) => {
       <div className="container firsthero__container">
         <div className="firstHero__left" data-aos="fade-right">
           <div className="typed__container">
-            {
-              homeBg === true ?  <h1 className="firsthero__heading">The most advance <br /> AI <span ref={typedRef}></span></h1> : <h1 className="firsthero__heading">{title}</h1>
-            }
+            {homeBg === true ? (
+              <h1 className="firsthero__heading">
+                The most advance <br /> AI <span ref={typedRef}></span>
+              </h1>
+            ) : (
+              <h1 className="firsthero__heading">{title}</h1>
+            )}
           </div>
 
           <h5 className="text">{description}</h5>

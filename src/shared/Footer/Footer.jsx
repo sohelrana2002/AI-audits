@@ -14,12 +14,14 @@ const Footer = () => {
         <div className="footer__middle">
           <h1 className="text">Products</h1>
           <div className="footer__middle-content">
-            <NavLink to="/">AI Dectector</NavLink>
-            <NavLink to="/plagiarism-checking">Plagiarism Checking</NavLink>
+            <NavLink to="/AI-audits/">AI Dectector</NavLink>
+            <NavLink to="/AI-audits/plagiarism-checking">
+              Plagiarism Checking
+            </NavLink>
             <a href="#">Team Management</a>
             <a href="#">Shareable Reports</a>
-            
-            <NavLink to="/detection-score">Detection Score</NavLink>
+
+            <NavLink to="/AI-audits/detection-score">Detection Score</NavLink>
           </div>
         </div>
         {/* =====right side=========== */}
@@ -30,8 +32,10 @@ const Footer = () => {
             <a href="#">Blog</a>
             <a href="#">Join our affiliate program</a>
             <a href="#">Ambassador program</a>
-            <NavLink to="/privacy-policy">Privacy Policy</NavLink>
-            <NavLink to="/terms-conditions">Terms & Conditions</NavLink>
+            <NavLink to="/AI-audits/privacy-policy">Privacy Policy</NavLink>
+            <NavLink to="/AI-audits/terms-conditions">
+              Terms & Conditions
+            </NavLink>
           </div>
         </div>
       </div>

@@ -17,21 +17,33 @@ function App() {
         <ScrollToTop />
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/contact" element={<ContactUs />} />
+          <Route exact path="/AI-audits/" element={<Home />} />
+          <Route exact path="/AI-audits/contact" element={<ContactUs />} />
           <Route
             exact
-            path="/ai-content-detector-plugin"
+            path="/AI-audits/ai-content-detector-plugin"
             element={<DetectorPlugin />}
           />
           <Route
             exact
-            path="/plagiarism-checking"
+            path="/AI-audits/plagiarism-checking"
             element={<PlagiarismChecking />}
           />
-          <Route exact path="/detection-score" element={<DetectionScore />} />
-          <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route exact path="/terms-conditions" element={<TermsConditions />} />
+          <Route
+            exact
+            path="/AI-audits/detection-score"
+            element={<DetectionScore />}
+          />
+          <Route
+            exact
+            path="/AI-audits/privacy-policy"
+            element={<PrivacyPolicy />}
+          />
+          <Route
+            exact
+            path="/AI-audits/terms-conditions"
+            element={<TermsConditions />}
+          />
         </Routes>
         <Footer />
       </BrowserRouter>
