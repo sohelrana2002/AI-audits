@@ -19,7 +19,7 @@ const Footer = () => {
               Plagiarism Checking
             </NavLink>
             <a href="#">Team Management</a>
-            <a href="#">Shareable Reports</a>
+            <a href="#">Shareable Report</a>
 
             <NavLink to="/AI-audits/detection-score">Detection Score</NavLink>
           </div>
