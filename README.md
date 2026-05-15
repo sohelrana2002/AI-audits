@@ -4,7 +4,9 @@
 
 > ⚠️ **Note**: This is a **front‑only demo** — no backend, no real AI/OCR/plagiarism APIs are integrated. All detection scores and results are static examples.
 
-🔗 **Live Demo**: [sohelrana2002.github.io/AI-audits](https://sohelrana2002.github.io/AI-audits/)
+## 🚀 Live Demo
+
+- **Website**: [View Live Website](https://sohelrana2002.github.io/AI-audits/)
 
 ---
 
